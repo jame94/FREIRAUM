@@ -1,4 +1,4 @@
-# MESO Project Template
+# VVVV Project Template
 Default folder structure and patch setup to base your projects on
 
 # Folder Structure
