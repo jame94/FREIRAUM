@@ -1,0 +1,27 @@
+<vpack>
+	<meta>
+		<name>VVVV50beta35x86</name>
+        <license>https://vvvv.org/documentation/licensing</license>
+	</meta>
+	<install>
+        using System;
+        using System.Xml;
+        using System.Net;
+        using System.IO;
+
+        var vvvvurl ="https://vvvv.org/sites/all/modules/general/pubdlcnt/pubdlcnt.php?file=https://vvvv.org/sites/default/files/vvvv_50beta35.2_x64.zip&amp;nid=1";
+		var vvvvzip = "vvvv_50beta35.2_x64.zip";
+		var addonsurl = "https://vvvv.org/sites/all/modules/general/pubdlcnt/pubdlcnt.php?file=https://vvvv.org/sites/default/files/addons_50beta35.2_x64.zip&amp;nid=1";
+		var addonszip = "addons_50beta35.2_x64.zip";
+		
+        Console.WriteLine("Downloading and extracting VVVV");
+        var locvvvvzip = Path.Combine(Pack.TempDir, vvvvzip);
+        Download(vvvvurl, locvvvvzip);
+        Extract(locvvvvzip, VVVV.Dir);
+
+        Console.WriteLine("Downloading and extracting the Addonpack");
+        var locaddonszip = Path.Combine(Pack.TempDir, addonszip);
+        Download(addonsurl, locaddonszip);
+        Extract(locaddonszip, Path.Combine(VVVV.Dir, Path.GetFileNameWithoutExtension(vvvvzip)));
+	</install>
+</vpack>
