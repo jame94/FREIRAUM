@@ -11,13 +11,13 @@ Software/Assets/CMSAssets/
 Software/Assets/FatAssets/
 
 #vvvv folder
-vvvv/*
 
 #vvvv
 *~.xml
 
 # Dynamic Plugins
 *._dynamic_.*.dll
+*._dynamic_.*.pdb
 
 #Visual Studio
 obj
