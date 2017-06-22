@@ -1,0 +1,205 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
+   <PATCH nodename="C:\Users\phlegma\Desktop\Software-Template\Software\Patches\_root.v4p" filename="D:\Repositories\projecttemplate\Patches\ROOT-CO-CallMeNames.v4p" systemname="ROOT-CO-CallMeNames" scrollx="0" scrolly="0">
+   <BOUNDS height="10500" left="0" top="2265" type="Window" width="8895">
+   </BOUNDS>
+   <NODE componentmode="InABox" id="145" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="330" top="2640" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="435" left="330" top="2640" type="Box" width="675">
+   </BOUNDS>
+   <PIN encoded="0" pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="17">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="FPS">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="120">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="156" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="4320" top="1410" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="510" left="4320" top="1410" type="Box" width="480">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN encoded="0" pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN encoded="0" pinname="Descriptive Name" slicecount="1" values="Log">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="163" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="330" top="1410" width="630" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="330" top="1410" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="120">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="FPS">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="164" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="1650" top="1410" width="915" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1650" top="1410" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="Filtered">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Time Mode|">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="Output Enum" visible="1">
+   </PIN>
+   </NODE>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="243" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="300" top="255" width="870" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="300" top="255" width="8160" height="495">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Project Name|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="244" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="300" top="750" width="870" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="300" top="750" width="3825" height="450">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Author: callmenames|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="7">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="246" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="3000" top="1410" width="1050" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3000" top="1410" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="ProjectName">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Application Title|">
+   </PIN>
+   </NODE>
+   <NODE id="245" componentmode="Hidden" systemname="ProjectSetup" filename="Subpatches\ProjectSetup\ProjectSetup.v4p" nodename="Subpatches\ProjectSetup\ProjectSetup.v4p">
+   <BOUNDS type="Node" left="330" top="2145" width="4065" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="330" top="2145" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="8865" top="11685" width="17865" height="12510">
+   </BOUNDS>
+   <PIN pinname="FPS" visible="1">
+   </PIN>
+   <PIN pinname="Time Mode" visible="1">
+   </PIN>
+   <PIN pinname="DeviceName" visible="1" slicecount="1" values="CO-Example">
+   </PIN>
+   <PIN pinname="Enable Logging" visible="1">
+   </PIN>
+   <PIN pinname="Application Title" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="246" srcpinname="Output String" dstnodeid="245" dstpinname="Application Title">
+   </LINK>
+   <LINK srcnodeid="156" srcpinname="Y Output Value" dstnodeid="245" dstpinname="Log">
+   </LINK>
+   <LINK srcnodeid="245" srcpinname="FPS" dstnodeid="145" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="164" srcpinname="Output Enum" dstnodeid="245" dstpinname="Time Mode">
+   </LINK>
+   <LINK srcnodeid="163" srcpinname="Y Output Value" dstnodeid="245" dstpinname="FPS">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="250" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="330" top="4080" width="2160" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="330" top="4080" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\Software\nodes\">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Directory">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="253" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="3090" top="4080" width="1095" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3090" top="4080" width="3870" height="1830">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|To setup the project, copy and paste the path to the left into the IO Box inside vvvv&apos;s root (Alt+R), the one that is connected to the Cons.&cr;&lf;&cr;&lf;Save the vvvv root without any other patches open and commit it to the project repository.&cr;&lf;&cr;&lf;Delete this from the root patch after you&apos;re done.|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="254" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="300" top="3480" width="870" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="300" top="3480" width="6660" height="495">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="Setup">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="12">
+   </PIN>
+   </NODE>
+   </PATCH>
