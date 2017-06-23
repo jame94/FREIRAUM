@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\janme\Documents\FREIRAUM\Software\nodes\plugins\VVVV-MQTT\Nodes (Network MQTT).v4p" scrollx="0" scrolly="0" systemname="MQTT (Network Client) help" filename="D:\develop\mqtt\MQTT (Network Client) help.v4p">
+   <PATCH nodename="C:\Users\janme\Documents\FREIRAUM\Software\nodes\plugins\VVVV-MQTT\Nodes (Network MQTT).v4p" scrollx="1860" scrolly="6465" systemname="MQTT (Network Client) help" filename="D:\develop\mqtt\MQTT (Network Client) help.v4p">
    <BOUNDS type="Window" left="1020" top="-135" width="9000" height="11535">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
