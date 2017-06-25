@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.2.dtd" >
-   <PATCH nodename="C:\Users\phlegma\Desktop\Software-Template\Software\Patches\_root.v4p" filename="D:\Repositories\projecttemplate\Patches\ROOT-CO-CallMeNames.v4p" systemname="ROOT-CO-CallMeNames" scrollx="0" scrolly="0">
-   <BOUNDS height="10500" left="0" top="2265" type="Window" width="8895">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.7.dtd" >
+   <PATCH nodename="C:\Users\janme\Documents\FREIRAUM\Software\Patches\_root.v4p" filename="D:\Repositories\projecttemplate\Patches\ROOT-CO-CallMeNames.v4p" systemname="ROOT-CO-CallMeNames" scrollx="0" scrolly="0">
+   <BOUNDS height="10500" left="6675" top="2790" type="Window" width="8895">
    </BOUNDS>
    <NODE componentmode="InABox" id="145" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="0" left="330" top="2640" type="Node" width="0">
@@ -83,7 +83,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="300" top="255" width="8160" height="495">
    </BOUNDS>
-   <PIN pinname="Input String" visible="0" slicecount="1" values="|Project Name|">
+   <PIN pinname="Input String" visible="0" slicecount="1" values="FREIRAUM">
    </PIN>
    <PIN pinname="Output String" visible="0">
    </PIN>
