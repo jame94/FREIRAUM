@@ -1,0 +1,14 @@
+In separate terminal windows do the following:
+
+Start the broker:
+cd enter/your/mosquitto/directory
+mosquitto
+
+Start the command line subscriber:
+mosquitto_sub -v -t 'p6/mqtt'
+
+Publish test message with the command line publisher:
+mosquitto_pub -t 'p6/mqtt' -m "Broker successfully installed..."
+
+As well as seeing both the subscriber and publisher connection messages in the broker terminal the following should be printed in the subscriber terminal:
+p6/mqtt helloWorld
