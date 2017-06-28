@@ -1,0 +1,511 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
+   <PATCH nodename="C:\Users\janme\Documents\FREIRAUM\Software\Patches\Subpatches\HTTP-REST Basic Authentication_fitbit.v4p" scrollx="0" scrolly="3240" systemname="HTTP-REST Basic Authentication_fitbit" filename="C:\Users\janme\Documents\v4\patches_fitbit\HTTP-REST Basic Authentication_fitbit.v4p">
+   <BOUNDS type="Window" left="3600" top="0" width="13950" height="12060">
+   </BOUNDS>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="92" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="585" top="855" width="2940" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="585" top="855" width="3240" height="480">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Simple Node to interact with REST API&apos;s.&cr;&lf;Based on:|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="94" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="585" top="1380" width="2235" height="345">
+   </BOUNDS>
+   <BOUNDS type="Node" left="585" top="1380" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="http://restsharp.org">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="URL">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="96" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="3975" top="1380" width="3345" height="315">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3975" top="1380" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input String" slicecount="1" values="http://vvvv.org/users/korriander">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="URL">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="97" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="3975" top="1110" width="1170" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3975" top="1110" width="1170" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="By:">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="98" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="585" top="195" width="2940" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="585" top="195" width="6915" height="585">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Basic Authentication Example|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="15">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="153" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="585" top="1785" width="8850" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="585" top="1785" width="8850" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="--------------------------------------------------------------------------------------------------------------------">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="Timing (Debug)" nodename="Timing (Debug)" componentmode="Hidden" id="156">
+   <BOUNDS type="Node" left="9675" top="570" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="frames per second" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="MainLoop (VVVV)" nodename="MainLoop (VVVV)" componentmode="Hidden" id="-6">
+   <BOUNDS type="Node" left="9675" top="270" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Maximum Foreground FPS" visible="1" slicecount="1" values="120">
+   </PIN>
+   <PIN pinname="Maximum Background FPS" visible="1" slicecount="1" values="30">
+   </PIN>
+   <PIN pinname="Increase Timing Precision" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="158" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="9675" top="855" width="795" height="255">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9675" top="855" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="156" srcpinname="frames per second" dstnodeid="158" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Queue (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Queue (Spreads)" componentmode="Hidden" id="159">
+   <BOUNDS type="Node" left="9675" top="1140" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Reset" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Insert" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Frame Count" slicecount="1" values="120">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="9675" top="1140">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="158" srcpinname="Y Output Value" dstnodeid="159" dstpinname="Input">
+   </LINK>
+   <NODE componentmode="InABox" id="162" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="100" left="9675" top="1440" type="Node" width="100">
+   </BOUNDS>
+   <BOUNDS height="795" left="9675" top="1440" type="Box" width="3735">
+   </BOUNDS>
+   <PIN pinname="Show Slider" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0.351351351351351">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.506849315068493">
+   </PIN>
+   <PIN pinname="Slider Alignment" slicecount="1" values="Grid">
+   </PIN>
+   <PIN pinname="Minimum" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Maximum" slicecount="1" values="150">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="120">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="159" srcpinname="Output" dstnodeid="162" dstpinname="Y Input Value">
+   </LINK>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE systemname="Renderer (TTY)" nodename="Renderer (TTY)" componentmode="InAWindow" id="489">
+   <BOUNDS type="Node" left="9690" top="2385" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9690" top="2385" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="9750" top="240" width="9255" height="5970">
+   </BOUNDS>
+   <PIN pinname="Log Messages" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="HTTP_Basic_Authentication (Network 1.0)" filename="%VVVV%\packs\VVVV-REST-master\plugins\NetworkHTTP-REST\NetworkHTTP-REST.csproj" nodename="HTTP_Basic_Authentication (Network 1.0)" componentmode="Hidden" id="543">
+   <BOUNDS type="Node" left="4215" top="4575" width="2415" height="270">
+   </BOUNDS>
+   <PIN pinname="Authentication" visible="1">
+   </PIN>
+   <PIN pinname="Username" visible="1">
+   </PIN>
+   <PIN pinname="Password" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="542" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="6945" top="4830" width="735" height="585">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6945" top="4830" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="540" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="6870" top="5715" width="6000" height="1500">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6870" top="5715" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="539" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5265" top="6060" width="735" height="585">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5265" top="6060" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="538" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="6885" top="7365" width="4215" height="3075">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6885" top="7365" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="AsString (Raw)" nodename="AsString (Raw)" componentmode="Hidden" id="537">
+   <BOUNDS type="Node" left="915" top="6060" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="535" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="4215" top="4005" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4215" top="4005" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Username">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="535" srcpinname="Output String" dstnodeid="543" dstpinname="Username">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="534" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="5220" top="3960" width="1680" height="315">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5220" top="3960" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Password">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="534" srcpinname="Output String" dstnodeid="543" dstpinname="Password">
+   </LINK>
+   <NODE systemname="HTTP-REST (Network 1.0)" filename="%VVVV%\packs\VVVV-REST-master\plugins\NetworkHTTP-REST\NetworkHTTP-REST.csproj" nodename="HTTP-REST (Network 1.0)" componentmode="Hidden" id="533">
+   <BOUNDS type="Node" left="915" top="5595" width="4590" height="270">
+   </BOUNDS>
+   <PIN pinname="Authentication" visible="1">
+   </PIN>
+   <PIN pinname="BaseURL">
+   </PIN>
+   <PIN pinname="Header" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Cancel" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="533" srcpinname="Output" dstnodeid="537" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="533" srcpinname="Header" dstnodeid="538" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="533" srcpinname="Success" dstnodeid="539" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="533" srcpinname="Status" dstnodeid="540" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="542" srcpinname="Y Output Value" dstnodeid="533" dstpinname="Execute">
+   </LINK>
+   <LINK srcnodeid="543" srcpinname="Authentication" dstnodeid="533" dstpinname="Authentication">
+   </LINK>
+   <LINK srcnodeid="541" srcpinname="Output String" dstnodeid="533" dstpinname="BaseURL">
+   </LINK>
+   <NODE id="541" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="885" top="2865" width="4290" height="360">
+   </BOUNDS>
+   <BOUNDS type="Node" left="885" top="2865" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="https://api.fitbit.com/">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="http://localhost">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="URL">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="BaseURL">
+   </PIN>
+   </NODE>
+   <NODE systemname="HTTP_Add_Header (Network 1.0)" filename="%VVVV%\packs\VVVV-REST-master\plugins\NetworkHTTP-REST\NetworkHTTP-REST.csproj" nodename="HTTP_Add_Header (Network 1.0)" componentmode="Hidden" id="554">
+   <BOUNDS type="Node" left="1320" top="4995" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Key Value Parameter" visible="1">
+   </PIN>
+   <PIN pinname="Header Name" visible="1">
+   </PIN>
+   <PIN pinname="Header Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="AsString (Object)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="AsString (Object)" componentmode="Hidden" id="573">
+   <BOUNDS type="Node" left="1185" top="8194" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Object" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="AsXElement (JSON)" filename="%VVVV%\addonpack\lib\nodes\plugins\JSONStringAsElement.dll" nodename="AsXElement (JSON)" componentmode="Hidden" id="572">
+   <BOUNDS type="Node" left="930" top="7616" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XML" visible="1">
+   </PIN>
+   <PIN pinname="Element" visible="1">
+   </PIN>
+   <PIN pinname="JSON" visible="1" slicecount="1" values="|{&quot;user&quot;:{&quot;age&quot;:23,&quot;autoStrideEnabled&quot;:true,&quot;avatar&quot;:&quot;https://d6y8zfzc2qfsl.cloudfront.net/08738CBC-C0FE-B9EA-0F96-541624F923FB_profile_100_square.jpg&quot;,&quot;avatar150&quot;:&quot;https://d6y8zfzc2qfsl.cloudfront.net/08738CBC-C0FE-B9EA-0F96-541624F923FB_profile_150_square.jpg&quot;,&quot;avatar640&quot;:&quot;https://d6y8zfzc2qfsl.cloudfront.net/08738CBC-C0FE-B9EA-0F96-541624F923FB_profile_640_square.jpg&quot;,&quot;averageDailySteps&quot;:12894,&quot;clockTimeDisplayFormat&quot;:&quot;24hour&quot;,&quot;corporate&quot;:false,&quot;corporateAdmin&quot;:false,&quot;country&quot;:&quot;DE&quot;,&quot;dateOfBirth&quot;:&quot;1994-02-02&quot;,&quot;displayName&quot;:&quot;Jan M.&quot;,&quot;displayNameSetting&quot;:&quot;name&quot;,&quot;distanceUnit&quot;:&quot;METRIC&quot;,&quot;encodedId&quot;:&quot;5S7WXM&quot;,&quot;features&quot;:{&quot;exerciseGoal&quot;:true},&quot;foodsLocale&quot;:&quot;de_DE&quot;,&quot;fullName&quot;:&quot;Jan Messing&quot;,&quot;gender&quot;:&quot;MALE&quot;,&quot;glucoseUnit&quot;:&quot;METRIC&quot;,&quot;height&quot;:178,&quot;heightUnit&quot;:&quot;METRIC&quot;,&quot;locale&quot;:&quot;de_DE&quot;,&quot;memberSince&quot;:&quot;2017-06-09&quot;,&quot;mfaEnabled&quot;:false,&quot;offsetFromUTCMillis&quot;:7200000,&quot;startDayOfWeek&quot;:&quot;MONDAY&quot;,&quot;strideLengthRunning&quot;:124.80000000000001,&quot;strideLengthRunningType&quot;:&quot;manual&quot;,&quot;strideLengthWalking&quot;:73.9,&quot;strideLengthWalkingType&quot;:&quot;default&quot;,&quot;swimUnit&quot;:&quot;METRIC&quot;,&quot;timezone&quot;:&quot;Europe/Berlin&quot;,&quot;topBadges&quot;:[{&quot;badgeGradientEndColor&quot;:&quot;FFDB01&quot;,&quot;badgeGradientStartColor&quot;:&quot;D99123&quot;,&quot;badgeType&quot;:&quot;DAILY_STEPS&quot;,&quot;category&quot;:&quot;Tägliche Schritte&quot;,&quot;cheers&quot;:[],&quot;dateTime&quot;:&quot;2017-06-10&quot;,&quot;description&quot;:&quot;25.000 Schritte an einem Tag&quot;,&quot;earnedMessage&quot;:&quot;Glückwunsch zu deinem ersten Ausgehschuh-Abzeichen!&quot;,&quot;encodedId&quot;:&quot;228TLX&quot;,&quot;image100px&quot;:&quot;https://static0.fitbit.com/images/badges_new/100px/badge_daily_steps25k.png&quot;,&quot;image125px&quot;:&quot;https://static0.fitbit.com/images/badges_new/125px/badge_daily_steps25k.png&quot;,&quot;image300px&quot;:&quot;https://static0.fitbit.com/images/badges_new/300px/badge_daily_steps25k.png&quot;,&quot;image50px&quot;:&quot;https://static0.fitbit.com/images/badges_new/badge_daily_steps25k.png&quot;,&quot;image75px&quot;:&quot;https://static0.fitbit.com/images/badges_new/75px/badge_daily_steps25k.png&quot;,&quot;marketingDescription&quot;:&quot;Du hast 25.000 Schritte zurückgelegt und dir damit das Ausgehschuh-Abzeichen verdient.&quot;,&quot;mobileDescription&quot;:&quot;Angesichts dieser beeindruckenden Fitnessleistung ist deine Sammlung nun um ein Abzeichen reicher. Schritt für Schritt ein Erfolg!&quot;,&quot;name&quot;:&quot;Ausgehschuh (25.000 Schritte an einem Tag)&quot;,&quot;shareImage640px&quot;:&quot;https://static0.fitbit.com/images/badges_new/386px/shareLocalized/de_DE/badge_daily_steps25k.png&quot;,&quot;shareText&quot;:&quot;Ich bin 25.000Schritte gegangen und habe mir das Ausgehschuh-Abzeichen verdient. #Fitbit&quot;,&quot;shortDescription&quot;:&quot;25.000 Schritte&quot;,&quot;shortName&quot;:&quot;Ausgehschuh&quot;,&quot;timesAchieved&quot;:1,&quot;value&quot;:25000},{&quot;badgeGradientEndColor&quot;:&quot;38D7FF&quot;,&quot;badgeGradientStartColor&quot;:&quot;2DB4D7&quot;,&quot;badgeType&quot;:&quot;LIFETIME_DISTANCE&quot;,&quot;category&quot;:&quot;Gesamtstrecke&quot;,&quot;cheers&quot;:[],&quot;dateTime&quot;:&quot;2017-06-13&quot;,&quot;description&quot;:&quot;42 km insgesamt&quot;,&quot;earnedMessage&quot;:&quot;Super! Du hast dir das Marathon-Abzeichen verdient.&quot;,&quot;encodedId&quot;:&quot;22B8LN&quot;,&quot;image100px&quot;:&quot;https://static0.fitbit.com/images/badges_new/100px/badge_lifetime_miles26_2.png&quot;,&quot;image125px&quot;:&quot;https://static0.fitbit.com/images/badges_new/125px/badge_lifetime_miles26_2.png&quot;,&quot;image300px&quot;:&quot;https://static0.fitbit.com/images/badges_new/300px/badge_lifetime_miles26_2.png&quot;,&quot;image50px&quot;:&quot;https://static0.fitbit.com/images/badges_new/badge_lifetime_miles26_2.png&quot;,&quot;image75px&quot;:&quot;https://static0.fitbit.com/images/badges_new/75px/badge_lifetime_miles26_2.png&quot;,&quot;marketingDescription&quot;:&quot;Indem du insgesamt 42 kilometers gegangen bist, hast du dir das Marathon-Abzeichen verdient.&quot;,&quot;mobileDescription&quot;:&quot;Du hast dir soeben dein erstes Abzeichen für Gesamtmeilen verdient. Aber das ist erst der Anfang. Du wirst es sicherlich noch weit bringen!&quot;,&quot;name&quot;:&quot;Marathon (42 km insgesamt)&quot;,&quot;shareImage640px&quot;:&quot;https://static0.fitbit.com/images/badges_new/386px/shareLocalized/de_DE/badge_lifetime_miles26_2_km.png&quot;,&quot;shareText&quot;:&quot;Ich habe mit meinem #Fitbit 42 Kilometer zurückgelegt und mir dafür das Marathon-Abzeichen verdient.&quot;,&quot;shortDescription&quot;:&quot;42 Kilometer&quot;,&quot;shortName&quot;:&quot;Marathon&quot;,&quot;timesAchieved&quot;:1,&quot;unit&quot;:&quot;KILOMETERS&quot;,&quot;value&quot;:42},{&quot;badgeGradientEndColor&quot;:&quot;B0DF2A&quot;,&quot;badgeGradientStartColor&quot;:&quot;00A550&quot;,&quot;badgeType&quot;:&quot;DAILY_FLOORS&quot;,&quot;category&quot;:&quot;Tägliche Etagen&quot;,&quot;cheers&quot;:[],&quot;dateTime&quot;:&quot;2017-06-10&quot;,&quot;description&quot;:&quot;25 Etagen an einem Tag&quot;,&quot;earnedMessage&quot;:&quot;Glückwunsch zu deinem ersten Schwarzwald-Abzeichen!&quot;,&quot;encodedId&quot;:&quot;228TSZ&quot;,&quot;image100px&quot;:&quot;https://static0.fitbit.com/images/badges_new/100px/badge_daily_floors25.png&quot;,&quot;image125px&quot;:&quot;https://static0.fitbit.com/images/badges_new/125px/badge_daily_floors25.png&quot;,&quot;image300px&quot;:&quot;https://static0.fitbit.com/images/badges_new/300px/badge_daily_floors25.png&quot;,&quot;image50px&quot;:&quot;https://static0.fitbit.com/images/badges_new/badge_daily_floors25.png&quot;,&quot;image75px&quot;:&quot;https://static0.fitbit.com/images/badges_new/75px/badge_daily_floors25.png&quot;,&quot;marketingDescription&quot;:&quot;Mit 25 Etagen hast du dir das Schwarzwald-Abzeichen verdient.&quot;,&quot;mobileDescription&quot;:&quot;Das ist eine ganze Menge Holz.&quot;,&quot;name&quot;:&quot;Schwarzwald (25 Etagen an einem Tag)&quot;,&quot;shareImage640px&quot;:&quot;https://static0.fitbit.com/images/badges_new/386px/shareLocalized/de_DE/badge_daily_floors25.png&quot;,&quot;shareText&quot;:&quot;Ich habe 25 Treppen bestiegen und mir dafür das Schwarzwald-Abzeichen verdient! #Fitbit&quot;,&quot;shortDescription&quot;:&quot;25 Etagen&quot;,&quot;shortName&quot;:&quot;Schwarzwald&quot;,&quot;timesAchieved&quot;:1,&quot;value&quot;:25}],&quot;waterUnit&quot;:&quot;METRIC&quot;,&quot;waterUnitName&quot;:&quot;ml&quot;,&quot;weight&quot;:68.5,&quot;weightUnit&quot;:&quot;METRIC&quot;}}|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="572" srcpinname="Element" dstnodeid="573" dstpinname="Object">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="571" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="4125" top="10653" width="15945" height="26835">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4125" top="10653" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="573" srcpinname="String" dstnodeid="571" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="GetElements (XElement ByXPath)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="GetElements (XElement ByXPath)" componentmode="Hidden" id="570">
+   <BOUNDS type="Node" left="915" top="11388" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Element" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="XPath" visible="1">
+   </PIN>
+   <PIN pinname="Elements" visible="1">
+   </PIN>
+   <PIN pinname="Namespace Resolver" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="569" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1370" top="10814" width="885" height="255">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1370" top="10814" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="user">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="MyChildTag/MyChildsChildTag">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="569" srcpinname="Output String" dstnodeid="570" dstpinname="XPath">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="568" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="911" top="12454" width="1290" height="795">
+   </BOUNDS>
+   <BOUNDS type="Node" left="911" top="12454" width="0" height="0">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="570" srcpinname="Elements" dstnodeid="568" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="Element (XElement Split)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Element (XElement Split)" componentmode="Hidden" id="567">
+   <BOUNDS type="Node" left="2025" top="11881" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Element" visible="1">
+   </PIN>
+   <PIN pinname="Deep Value" visible="1">
+   </PIN>
+   <PIN pinname="Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="570" srcpinname="Elements" dstnodeid="567" dstpinname="Element">
+   </LINK>
+   <LINK srcnodeid="572" srcpinname="Element" dstnodeid="570" dstpinname="Element">
+   </LINK>
+   <LINK srcnodeid="554" srcpinname="Key Value Parameter" dstnodeid="533" dstpinname="Header">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="575" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1290" top="3750" width="1500" height="300">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1290" top="3750" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="Authorization">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|Header Name|">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="575" srcpinname="Output String" dstnodeid="554" dstpinname="Header Name">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="576" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1650" top="4320" width="2085" height="510">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1650" top="4320" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|Hier aufgelöster Authorization-Code nutzen.|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|Header Value|">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="576" srcpinname="Output String" dstnodeid="554" dstpinname="Header Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="577">
+   <BOUNDS type="Box" left="2415" top="7410" width="3645" height="1590">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2415" top="7410" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="537" srcpinname="Output" dstnodeid="577" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="537" srcpinname="Output" dstnodeid="572" dstpinname="JSON">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="581">
+   <BOUNDS type="Box" left="2460" top="10845" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2460" top="10845" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="581" srcpinname="Output Node" dstnodeid="570" dstpinname="Namespace Resolver">
+   </LINK>
+   </PATCH>
