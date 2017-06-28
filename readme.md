@@ -15,18 +15,27 @@ und beschäftigt sich mit dem Thema Mediation und Selbstfindung.
 #### 3. Install ESP8266 in Boardverwaltung
 #### 4. Choose Board: NodeMCU1.0
   
-#### PubSubClientMaster for MQTT:
+##### PubSubClientMaster for MQTT:
 https://github.com/knolleary/pubsubclient
 Install at Bibliothek as ZIP-file
 
-Pulsesensor:
+##### Pulsesensor:
+information: https://pulsesensor.com/
+simple Tutorial: https://www.youtube.com/watch?v=82T_zBZQkOE
+code for beginners: https://github.com/WorldFamousElectronics/PulseSensorStarterProject
  
-GPS:
+##### GPS:
+ 
+ 
  
 ### vvvv 
 
-Kinect:
+##### Kinect: 
+Install the Kinect-Software on your computer:
+Kinect for Windows Runtime v1.7: https://www.microsoft.com/en-us/download/confirmation.aspx?id=36997
+Kinect for Windows Developer Toolkit v1.8: https://www.microsoft.com/en-us/download/confirmation.aspx?id=40276
+For using Kinect in vvvv install the vvvv addon-package.
 
-MQTT:
+##### MQTT:
 
-fitbit:
+##### fitbit:
