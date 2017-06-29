@@ -1,6 +1,6 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\janme\Documents\FREIRAUM\Software\Patches\Subpatches\Skeleton-Kinect.v4p" filename="C:\Users\janme\Documents\FREIRAUM\Software\Patches\Subpatches\Skeleton-Kinect.v4p" systemname="Skeleton-Kinect" scrollx="450" scrolly="615">
-   <BOUNDS height="9510" left="240" top="1365" type="Window" width="8175">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.7.dtd" >
+   <PATCH nodename="C:\Users\Tang Cam Hong Pham\Documents\P6 - Git\Software\Patches\subpatches\Skeleton-Kinect.v4p" filename="C:\Users\janme\Documents\FREIRAUM\Software\Patches\Subpatches\Skeleton-Kinect.v4p" systemname="Skeleton-Kinect" scrollx="450" scrolly="615">
+   <BOUNDS height="9506" left="4305" top="3283" type="Window" width="8169">
    </BOUNDS>
    <NODE componentmode="InABox" id="30" nodename="IOBox (Value Advanced)" systemname="IOBox (Value Advanced)">
    <BOUNDS height="100" left="1845" top="1365" type="Node" width="100">
@@ -55,7 +55,7 @@
    </BOUNDS>
    <BOUNDS height="1800" left="2580" top="7935" type="Box" width="2400">
    </BOUNDS>
-   <BOUNDS height="4860" left="2430" top="900" type="Window" width="6120">
+   <BOUNDS height="4858" left="12019" top="8120" type="Window" width="6118">
    </BOUNDS>
    <PIN pinname="Projection" visible="1">
    </PIN>
@@ -316,4 +316,24 @@
    <PIN pinname="Descriptive Name" slicecount="1" values="TranslateY">
    </PIN>
    </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="59">
+   <BOUNDS type="Box" left="5558" top="1561" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5558" top="1561" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="59" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Reset">
+   </LINK>
    </PATCH>
