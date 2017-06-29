@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.7.dtd" >
-   <PATCH nodename="C:\Users\Tang Cam Hong Pham\Desktop\FREIRAUM\V4 Prototyp\flowerfruitcoord.v4p" scrollx="0" scrolly="2502" systemname="flowerfruitcoord" filename="C:\Users\Tang Cam Hong Pham\Desktop\FREIRAUM\V4 Prototyp\flowerfruitcoord.v4p">
-   <BOUNDS type="Window" left="6657" top="2968" width="8995" height="5999">
+   <PATCH nodename="C:\Users\Tang Cam Hong Pham\Documents\P6 - Git\vvvv\subpatches\flowerfruitcoord.v4p" scrollx="0" scrolly="-360" systemname="flowerfruitcoord" filename="C:\Users\Tang Cam Hong Pham\Desktop\FREIRAUM\V4 Prototyp\flowerfruitcoord.v4p">
+   <BOUNDS type="Window" left="2933" top="2163" width="8995" height="5999">
    </BOUNDS>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="12">
    <BOUNDS type="Node" left="1043" top="602" width="100" height="100">
@@ -13,17 +13,17 @@
    </PIN>
    <PIN pinname="Show Slider" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Minimum" slicecount="1" values="0">
+   <PIN pinname="Minimum" slicecount="1" values="-1">
    </PIN>
    <PIN pinname="Maximum" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="9" visible="1" values="0.267509578544063,0.489731800766284,0.0788859416445629,0.0184674329501932,0.815402298850575,0.646819923371647,0.857547892720308,0.33264367816092,0.74555260831123">
+   <PIN pinname="Y Input Value" slicecount="9" visible="1" values="0.4016091954023,0.489731800766284,0.0252460949012678,0.309655172413795,0.884367816091955,0.616168582375479,0.857547892720308,0.340306513409962,0.714901267315061">
    </PIN>
    <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
    </PIN>
    <PIN pinname="Slider Constraints" slicecount="1" values="None">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="9" visible="1" pintype="Input" values="0.185770750988143,0.339920948616602,0.825177238220717,0.588932806324111,0.399209486166008,0.584980237154151,0.648221343873518,0.881422924901186,0.912133759959848">
+   <PIN pinname="X Input Value" slicecount="9" visible="1" pintype="Input" values="0.268774703557313,0.339920948616602,0.730315578141666,0.644268774703558,0.312252964426878,0.584980237154151,0.57707509881423,0.881422924901186,0.959564589999374">
    </PIN>
    <PIN pinname="X Output Value" visible="1" pintype="Output">
    </PIN>
@@ -89,13 +89,13 @@
    </PIN>
    <PIN pinname="Maximum" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="4" values="0.516551724137932,0.665977011494254,0.205322723253758,0.750268199233718">
+   <PIN pinname="Y Input Value" slicecount="4" values="0.516551724137932,0.65065134099617,0.228311229000884,0.75793103448276">
    </PIN>
    <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
    </PIN>
    <PIN pinname="Slider Constraints" slicecount="1" values="None">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="4" visible="1" pintype="Input" values="-0.280632411067194,-0.482213438735177,-0.621463077984816,-0.83399209486166">
+   <PIN pinname="X Input Value" slicecount="4" visible="1" pintype="Input" values="-0.241106719367589,-0.403162055335968,-0.621463077984816,-0.889328063241107">
    </PIN>
    <PIN pinname="X Output Value" visible="1" pintype="Output">
    </PIN>
@@ -205,13 +205,13 @@
    </PIN>
    <PIN pinname="Maximum" slicecount="1" values="0">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="4" values="-0.150114942528733,-0.52176245210728,-0.180766283524902,-0.383831417624522">
+   <PIN pinname="Y Input Value" slicecount="4" values="-0.150114942528733,-0.52176245210728,-0.134789272030649,-0.37616858237548">
    </PIN>
    <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
    </PIN>
    <PIN pinname="Slider Constraints" slicecount="1" values="None">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="4" visible="1" pintype="Input" values="-0.640316205533596,-0.5098814229249,-1.28853754940711,-0.996047430830038">
+   <PIN pinname="X Input Value" slicecount="4" visible="1" pintype="Input" values="-0.640316205533596,-0.517786561264821,-1.23320158102766,-0.996047430830038">
    </PIN>
    <PIN pinname="X Output Value" visible="1" pintype="Output">
    </PIN>

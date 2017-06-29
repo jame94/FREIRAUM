@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.7.dtd" >
-   <PATCH nodename="C:\Users\Tang Cam Hong Pham\Desktop\FREIRAUM\V4 Prototyp\leafcoord.v4p" scrollx="0" scrolly="2132" systemname="leafcoord" filename="C:\Users\Tang Cam Hong Pham\Desktop\FREIRAUM\V4 Prototyp\leafcoord.v4p">
+   <PATCH nodename="C:\Users\Tang Cam Hong Pham\Documents\P6 - Git\vvvv\subpatches\leafcoord.v4p" scrollx="0" scrolly="1068" systemname="leafcoord" filename="C:\Users\Tang Cam Hong Pham\Desktop\FREIRAUM\V4 Prototyp\leafcoord.v4p">
    <BOUNDS type="Window" left="1820" top="3591" width="8995" height="5999">
    </BOUNDS>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="12">
@@ -13,17 +13,17 @@
    </PIN>
    <PIN pinname="Show Slider" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Minimum" slicecount="1" values="0">
+   <PIN pinname="Minimum" slicecount="1" values="-1.5">
    </PIN>
    <PIN pinname="Maximum" slicecount="1" values="1.5">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="9" visible="1" values="0.493524137931034,0.0376245210727967,0.258962569997053,0.112337164750959,0.430344827586208,0.579770114942528,0.763678160919542,0.574022988505748,0.822180960801651">
+   <PIN pinname="Y Input Value" slicecount="9" visible="1" values="-0.586935632183908,-0.583065134099617,-0.396209843796051,-0.427892720306512,-0.144367816091953,-0.316781609195404,0.0165517241379336,0.0682758620689663,0.222564102564103">
    </PIN>
    <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
    </PIN>
    <PIN pinname="Slider Constraints" slicecount="1" values="None">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="9" visible="1" pintype="Input" values="0.612648221343874,0.559288537549408,0.323200953635736,0.201581027667985,0.0217391304347832,0.411067193675889,0.353754940711463,0.031620553359684,0.064307673003326">
+   <PIN pinname="X Input Value" slicecount="9" visible="1" pintype="Input" values="-0.41897233201581,-0.626482213438734,-0.352688374427505,-0.747035573122529,-0.440711462450592,-1.08300395256917,-0.832015810276679,-1.11857707509881,-1.00090971830102">
    </PIN>
    <PIN pinname="X Output Value" visible="1" pintype="Output">
    </PIN>
@@ -79,17 +79,17 @@
    </PIN>
    <PIN pinname="Show Slider" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Minimum" slicecount="1" values="0">
+   <PIN pinname="Minimum" slicecount="1" values="-1.5">
    </PIN>
    <PIN pinname="Maximum" slicecount="1" values="1.5">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="9" visible="1" values="0.903524904214561,1.08551724137931,1.31451812555261,1.21578544061303,1.44061302681992,1.00122605363985,1.09318007662836,1.29432950191571,1.49076333628058">
+   <PIN pinname="Y Input Value" slicecount="9" visible="1" values="0.386283524904216,0.740689655172414,0.601874447391691,0.85946360153257,0.877394636015322,0.403524904214563,0.552950191570889,0.93800766283525,1.00417329796641">
    </PIN>
    <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
    </PIN>
    <PIN pinname="Slider Constraints" slicecount="1" values="None">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="9" visible="1" pintype="Input" values="0.713438735177866,1.01581027667984,1.03466340422862,0.646245059288538,0.810276679841897,0.333992094861661,0.239130434782608,0.250988142292491,0.603833364702931">
+   <PIN pinname="X Input Value" slicecount="9" visible="1" pintype="Input" values="-0.0573122529644263,-0.217391304347828,-0.483123157036202,-0.290513833992094,-0.434782608695653,-0.816205533596837,-0.804347826086957,-0.679841897233202,-0.763755568103393">
    </PIN>
    <PIN pinname="X Output Value" visible="1" pintype="Output">
    </PIN>
@@ -133,13 +133,13 @@
    </PIN>
    <PIN pinname="Maximum" slicecount="1" values="2.5">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="9" visible="1" values="0.893946360153263,0.999310344827586,1.27,1.32114942528736,0.961685823754784,1.30582375478927,0.911187739463607,1.05678160919541,1.23405835543767">
+   <PIN pinname="Y Input Value" slicecount="9" visible="1" values="0.0127203065134164,0.146819923371647,0.264252873563218,0.257931034482762,0.588122605363979,0.683218390804595,0.585517241379316,0.759846743295027,0.812602416740352">
    </PIN>
    <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
    </PIN>
    <PIN pinname="Slider Constraints" slicecount="1" values="None">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="9" visible="1" pintype="Input" values="1.69762845849803,1.44071146245059,1.45,1.67984189723321,1.88537549407114,1.90513833992095,2.16996047430831,2.18577075098815,2.08209423426814">
+   <PIN pinname="X Input Value" slicecount="9" visible="1" pintype="Input" values="0.521739130434789,0.630434782608692,0.224703557312253,0.741106719367598,0.413043478260863,0.304347826086958,0.984189723320168,0.486166007905146,0.767864985256282">
    </PIN>
    <PIN pinname="X Output Value" visible="1" pintype="Output">
    </PIN>
