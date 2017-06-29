@@ -1,0 +1,91 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.7.dtd" >
+   <PATCH nodename="C:\Users\Tang Cam Hong Pham\Desktop\FREIRAUM\V4 Prototyp\hittest.v4p" scrollx="0" scrolly="-360" systemname="hittest" filename="C:\Users\Tang Cam Hong Pham\Desktop\FREIRAUM\V4 Prototyp\hittest.v4p">
+   <BOUNDS type="Window" left="2562" top="2842" width="8995" height="5999">
+   </BOUNDS>
+   <NODE systemname="Cons (Spreads)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Cons (Spreads)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="1288" top="1855" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1288" top="1855" width="1400" height="1400">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1" slicecount="34" values="0.205533596837945,0.202375478927205,0.268774703557313,0.413103448275862,0.690789886442061,0.136357206012379,0.612648221343874,0.321149425287358,0.399209486166008,0.692796934865901,0.604743083003953,0.566360153256705,0.58498023715415,0.715785440613028,0.885375494071146,0.236858237547893,0.840987514900559,0.615284409077514,-0.280632411067194,0.516551724137932,-0.537549407114624,0.681302681992338,-0.645178493004579,0.136357206012379,-0.83399209486166,0.750268199233718,-0.379446640316205,-0.180766283524902,-0.58893280632411,-0.460459770114943,-0.664031620553359,-0.119463601532565,-0.996047430830039,-0.406819923371648">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="54" values="0.689723320158103,0.441839080459772,0.470355731225297,0.210038314176245,0.323200953635736,0.258962569997053,0.557312252964428,0.451417624521074,0.128458498023716,0.395862068965518,0.41699604743083,0.533793103448275,0.389328063241107,0.683218390804599,0.031620553359684,0.574022988505748,0.105809649287911,0.735974064249927,0.74308300395257,0.86329501915709,1.01581027667984,1.08551724137931,0.821224669050756,1.23980548187445,0.652173913043479,1.21578544061303,0.620553359683794,0.923371647509574,0.452569169960475,0.932260536398465,0.351778656126482,1.06444444444445,0.32806324110672,1.24835249042146,0.603833364702931,1.49076333628058,1.73715415019763,0.74068965517242,1.4802371541502,0.970574712643678,1.57221281134325,1.14402004126142,1.69960474308301,1.26367816091954,1.77667984189723,0.885057471264363,1.90513833992095,1.30582375478927,1.96245059288538,0.939923371647515,2.13636363636364,1.0280459770115,2.10185708011795,1.21490126731506">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="4" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1246" top="2289" width="1827" height="6447">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1246" top="2289" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Columns" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="44">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="4" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="4837" top="8848" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Bin Size" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="2" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5033" top="8071" width="693" height="210">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5033" top="8071" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Bin Size">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4886" top="9723" width="795" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4886" top="9723" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="2" values="0,">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|0, 0|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Output" dstnodeid="1" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="HitTest (2d Circle)" filename="%VVVV%\addonpack\lib\nodes\plugins\HitTest2dNodes.dll" nodename="HitTest (2d Circle)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="2849" top="9541" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   </PATCH>
