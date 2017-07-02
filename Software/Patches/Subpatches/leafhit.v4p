@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\janme\Documents\FREIRAUM\Software\Patches\Subpatches\leafhit.v4p" scrollx="0" scrolly="0" systemname="leafhit" filename="C:\Users\janme\Documents\FREIRAUM\Software\Patches\Subpatches\leafhit.v4p">
-   <BOUNDS type="Window" left="2955" top="4110" width="9000" height="6000">
+   <PATCH nodename="C:\Users\janme\Documents\FREIRAUM\Software\Patches\subpatches\leafhit.v4p" scrollx="0" scrolly="0" systemname="leafhit" filename="C:\Users\janme\Documents\FREIRAUM\Software\Patches\Subpatches\leafhit.v4p">
+   <BOUNDS type="Window" left="795" top="4830" width="8985" height="5985">
    </BOUNDS>
    <NODE systemname="HitTest (2d Circle)" filename="%VVVV%\addonpack\lib\nodes\plugins\HitTest2dNodes.dll" nodename="HitTest (2d Circle)" componentmode="Hidden" id="11">
    <BOUNDS type="Node" left="3563" top="1908" width="100" height="100">
@@ -20,8 +20,6 @@
    <PIN pinname="PositionXY" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="10" srcpinname="PositionXY" dstnodeid="11" dstpinname="PointsXY">
-   </LINK>
    <NODE systemname="Transform (Transform 2d Vector)" nodename="Transform (Transform 2d Vector)" componentmode="Hidden" id="9">
    <BOUNDS type="Node" left="2982" top="1348" width="100" height="100">
    </BOUNDS>
@@ -180,4 +178,24 @@
    </LINK>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="12">
+   <BOUNDS type="Box" left="6315" top="780" width="795" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6315" top="780" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="-0.684210526315789,-0.0234113712374582">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Rechte Hand (XY)|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="11" dstpinname="PointsXY">
+   </LINK>
    </PATCH>

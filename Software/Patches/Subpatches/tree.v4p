@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\janme\Documents\FREIRAUM\Software\Patches\Subpatches\tree.v4p" scrollx="3825" scrolly="2325" systemname="tree" filename="C:\Users\janme\Documents\FREIRAUM\Software\Patches\Subpatches\tree.v4p">
-   <BOUNDS type="Window" left="2580" top="2160" width="9000" height="6000">
+   <PATCH nodename="C:\Users\janme\Documents\FREIRAUM\Software\Patches\subpatches\tree.v4p" scrollx="3375" scrolly="1395" systemname="tree" filename="C:\Users\janme\Documents\FREIRAUM\Software\Patches\Subpatches\tree.v4p">
+   <BOUNDS type="Window" left="0" top="0" width="10230" height="11700">
    </BOUNDS>
    <NODE systemname="LinearSpread (Spreads)" nodename="LinearSpread (Spreads)" componentmode="Hidden" id="78">
    <BOUNDS type="Node" left="4088" top="8448" width="100" height="100">

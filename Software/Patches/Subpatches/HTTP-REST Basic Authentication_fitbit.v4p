@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\janme\Documents\FREIRAUM\Software\Patches\Subpatches\HTTP-REST Basic Authentication_fitbit.v4p" scrollx="0" scrolly="3240" systemname="HTTP-REST Basic Authentication_fitbit" filename="C:\Users\janme\Documents\v4\patches_fitbit\HTTP-REST Basic Authentication_fitbit.v4p">
-   <BOUNDS type="Window" left="3600" top="0" width="13950" height="12060">
+   <PATCH nodename="C:\Users\janme\Documents\FREIRAUM\Software\Patches\subpatches\HTTP-REST Basic Authentication_fitbit.v4p" scrollx="255" scrolly="450" systemname="HTTP-REST Basic Authentication_fitbit" filename="C:\Users\janme\Documents\v4\patches_fitbit\HTTP-REST Basic Authentication_fitbit.v4p">
+   <BOUNDS type="Window" left="1770" top="2670" width="13950" height="12060">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="92" systemname="IOBox (String)">
    <BOUNDS type="Node" left="585" top="855" width="2940" height="270">
@@ -179,7 +179,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="9690" top="2385" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="9750" top="240" width="9255" height="5970">
+   <BOUNDS type="Window" left="11160" top="2400" width="9255" height="5970">
    </BOUNDS>
    <PIN pinname="Log Messages" slicecount="1" values="1">
    </PIN>
@@ -335,7 +335,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="885" top="2865" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="https://api.fitbit.com/">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="https://api.fitbit.com/1/user/-/profile.json">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="http://localhost">
    </PIN>
@@ -447,9 +447,9 @@
    <LINK srcnodeid="554" srcpinname="Key Value Parameter" dstnodeid="533" dstpinname="Header">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="575" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="1290" top="3750" width="1500" height="300">
+   <BOUNDS type="Box" left="1275" top="3825" width="1500" height="300">
    </BOUNDS>
-   <BOUNDS type="Node" left="1290" top="3750" width="0" height="0">
+   <BOUNDS type="Node" left="1275" top="3825" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Input String" slicecount="1" visible="1" values="Authorization">
    </PIN>
@@ -463,11 +463,11 @@
    <LINK srcnodeid="575" srcpinname="Output String" dstnodeid="554" dstpinname="Header Name">
    </LINK>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="576" systemname="IOBox (String)">
-   <BOUNDS type="Box" left="1650" top="4320" width="2085" height="510">
+   <BOUNDS type="Box" left="1650" top="4320" width="1575" height="480">
    </BOUNDS>
    <BOUNDS type="Node" left="1650" top="4320" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="|Hier aufgelöster Authorization-Code nutzen.|">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1UzdXWE0iLCJhdWQiOiIyMjhLVlciLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJyc29jIHJhY3QgcnNldCBybG9jIHJ3ZWkgcmhyIHJwcm8gcm51dCByc2xlIiwiZXhwIjoxNDk5MDQ0NTMxLCJpYXQiOjE0OTkwMTU3MzF9.3_98dWz7NF_zmlZXHGNNB7E4SPMnuD0vGAIpUhY6HLM|">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="|Header Value|">
    </PIN>
@@ -508,4 +508,74 @@
    </NODE>
    <LINK srcnodeid="581" srcpinname="Output Node" dstnodeid="570" dstpinname="Namespace Resolver">
    </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="582">
+   <BOUNDS type="Node" left="1635" top="2595" width="1485" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1635" top="2595" width="330" height="285">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="4.">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="583">
+   <BOUNDS type="Node" left="7980" top="2985" width="15555" height="1320">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7980" top="2985" width="15630" height="2655">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|1. Eine Online-App über fitbit erstellen:&cr;&lf;https://dev.fitbit.com&cr;&lf;2. Die Callback URL auf eine eigenen Server zum Umleiten lenken&cr;&lf;3. Authorization über vorgeschlagene &quot;OAuth 2.0 tutorial page&quot;&cr;&lf;4. API enpoint URL in vvvv BaseURL einfügen&cr;&lf;5. Copy full &quot;Authorization&quot; - not: OAuth 2.0 Access Token&cr;&lf;6. Launch connection!&cr;&lf;&cr;&lf;RefreshToken: 628146f0bf555f33441d7a907f08087d01136dfbf3d293950e4294e5719ce892|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="584">
+   <BOUNDS type="Node" left="3285" top="4440" width="1485" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3285" top="4440" width="330" height="285">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="5.">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="585">
+   <BOUNDS type="Node" left="4185" top="3495" width="1485" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4185" top="3495" width="2775" height="255">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|No username and password needed|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="586">
+   <BOUNDS type="Node" left="6960" top="4530" width="1485" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6960" top="4530" width="690" height="300">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="Launch!">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
    </PATCH>
