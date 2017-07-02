@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.7.dtd" >
    <PATCH nodename="C:\Users\Tang Cam Hong Pham\Documents\P6 - Git\Software\Patches\Subpatches\initnew.v4p" systemname="initnew" filename="C:\Users\janme\Desktop\initnew.v4p" scrollx="0" scrolly="-360">
    <BOUNDS type="Window" left="4005" top="765" width="12570" height="10230">
+=======
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
+   <PATCH nodename="C:\Users\janme\Documents\FREIRAUM\Software\Patches\Subpatches\initnew.v4p" systemname="initnew" filename="C:\Users\janme\Desktop\initnew.v4p" scrollx="240" scrolly="0">
+   <BOUNDS type="Window" left="2025" top="210" width="12570" height="10230">
+>>>>>>> 2b1d935b56d7901b4619e567fd06f12c3fddc141
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
@@ -17,9 +23,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="3" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="1500" top="30" width="1650" height="1185">
+   <BOUNDS type="Box" left="1215" top="135" width="1410" height="765">
    </BOUNDS>
-   <BOUNDS type="Node" left="1500" top="30" width="0" height="0">
+   <BOUNDS type="Node" left="1215" top="135" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="4" visible="1" values="0.4,0.56,-0.4,-0.56">
    </PIN>
@@ -59,7 +65,7 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="3" srcpinname="Y Output Value" dstnodeid="8" dstpinname="XY">
-   <LINKPOINT x="2190" y="1515">
+   <LINKPOINT x="2048" y="1567">
    </LINKPOINT>
    </LINK>
    <LINK srcnodeid="8" srcpinname="X" dstnodeid="9" dstpinname="X">
@@ -455,9 +461,9 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="42" systemname="IOBox (String)">
-   <BOUNDS type="Node" left="8880" top="180" width="1020" height="270">
+   <BOUNDS type="Node" left="8610" top="150" width="1020" height="270">
    </BOUNDS>
-   <BOUNDS type="Box" left="8880" top="180" width="1020" height="270">
+   <BOUNDS type="Box" left="8610" top="150" width="1020" height="270">
    </BOUNDS>
    <PIN pinname="Input String" visible="0" slicecount="1" values="|vector3 rein|">
    </PIN>
@@ -468,6 +474,7 @@
    <PIN pinname="String Type" slicecount="1" values="MultiLine">
    </PIN>
    </NODE>
+<<<<<<< HEAD
    <NODE systemname="Quad (DX9)" nodename="Quad (DX9)" componentmode="Hidden" id="43">
    <BOUNDS type="Node" left="4879" top="3178" width="100" height="100">
    </BOUNDS>
@@ -486,10 +493,35 @@
    <PIN pinname="Color" visible="1" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
    </PIN>
    <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+=======
+   <NODE systemname="Quad (DX9)" filename="" nodename="Quad (DX9)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="4770" top="2805" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Color" visible="1" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Transform Out" dstnodeid="16" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Output" dstnodeid="16" dstpinname="Color">
+   </LINK>
+   <NODE systemname="Group (EX9)" filename="" nodename="Group (EX9)" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="3660" top="3465" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+>>>>>>> 2b1d935b56d7901b4619e567fd06f12c3fddc141
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
    </NODE>
+<<<<<<< HEAD
    <LINK srcnodeid="18" srcpinname="Output" dstnodeid="43" dstpinname="Color">
    </LINK>
    <LINK srcnodeid="11" srcpinname="Output" dstnodeid="44" dstpinname="Color">
@@ -511,5 +543,26 @@
    <LINK srcnodeid="44" srcpinname="Layer" dstnodeid="45" dstpinname="Layer 1">
    </LINK>
    <LINK srcnodeid="45" srcpinname="Layer" dstnodeid="10" dstpinname="Input Node">
+=======
+   <LINK srcnodeid="16" srcpinname="Layer" dstnodeid="17" dstpinname="Layer 2">
+   </LINK>
+   <NODE systemname="Quad (DX9)" filename="" nodename="Quad (DX9)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="1635" top="2940" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Color" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Transform Out" dstnodeid="0" dstpinname="Transform">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Output" dstnodeid="0" dstpinname="Color">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Layer" dstnodeid="17" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="17" srcpinname="Layer" dstnodeid="10" dstpinname="Input Node">
+>>>>>>> 2b1d935b56d7901b4619e567fd06f12c3fddc141
    </LINK>
    </PATCH>

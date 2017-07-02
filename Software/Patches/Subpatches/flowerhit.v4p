@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.7.dtd" >
    <PATCH nodename="C:\Users\Tang Cam Hong Pham\Documents\P6 - Git\Software\Patches\subpatches\flowerhit.v4p" scrollx="0" scrolly="-360" systemname="flowerhit" filename="C:\Users\Tang Cam Hong Pham\Documents\P6 - Git\vvvv\subpatches\flowerhit.v4p">
    <BOUNDS type="Window" left="5313" top="2646" width="8995" height="5999">
+=======
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
+   <PATCH nodename="C:\Users\janme\Documents\FREIRAUM\Software\Patches\subpatches\flowerhit.v4p" scrollx="0" scrolly="360" systemname="flowerhit" filename="C:\Users\Tang Cam Hong Pham\Documents\P6 - Git\vvvv\subpatches\flowerhit.v4p">
+   <BOUNDS type="Window" left="4050" top="4560" width="8985" height="5985">
+>>>>>>> 2b1d935b56d7901b4619e567fd06f12c3fddc141
    </BOUNDS>
    <NODE systemname="HitTest (2d Circle)" filename="%VVVV%\addonpack\lib\nodes\plugins\HitTest2dNodes.dll" nodename="HitTest (2d Circle)" componentmode="Hidden" id="11">
    <BOUNDS type="Node" left="3178" top="1750" width="100" height="100">
@@ -20,8 +26,6 @@
    <PIN pinname="PositionXY" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="10" srcpinname="PositionXY" dstnodeid="11" dstpinname="PointsXY">
-   </LINK>
    <NODE systemname="Transform (Transform 2d Vector)" nodename="Transform (Transform 2d Vector)" componentmode="Hidden" id="9">
    <BOUNDS type="Node" left="2597" top="1190" width="100" height="100">
    </BOUNDS>
@@ -182,6 +186,7 @@
    </LINK>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
+<<<<<<< HEAD
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="12">
    <BOUNDS type="Box" left="1883" top="273" width="693" height="210">
    </BOUNDS>
@@ -193,5 +198,28 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="12" srcpinname="Output Node" dstnodeid="9" dstpinname="Transform In">
+=======
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="12">
+   <BOUNDS type="Box" left="5220" top="630" width="795" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5220" top="630" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="-0.393483709273183,-0.959866220735786">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="| RechteHand (XY)|">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Y Output Value" dstnodeid="11" dstpinname="PointsXY">
+>>>>>>> 2b1d935b56d7901b4619e567fd06f12c3fddc141
    </LINK>
    </PATCH>

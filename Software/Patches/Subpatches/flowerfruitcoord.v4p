@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.7.dtd" >
    <PATCH nodename="C:\Users\Tang Cam Hong Pham\Documents\P6 - Git\Software\Patches\subpatches\flowerfruitcoord.v4p" scrollx="0" scrolly="-360" systemname="flowerfruitcoord" filename="C:\Users\Tang Cam Hong Pham\Desktop\FREIRAUM\V4 Prototyp\flowerfruitcoord.v4p">
+=======
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
+   <PATCH nodename="C:\Users\janme\Documents\FREIRAUM\Software\Patches\subpatches\flowerfruitcoord.v4p" scrollx="0" scrolly="-360" systemname="flowerfruitcoord" filename="C:\Users\Tang Cam Hong Pham\Desktop\FREIRAUM\V4 Prototyp\flowerfruitcoord.v4p">
+>>>>>>> 2b1d935b56d7901b4619e567fd06f12c3fddc141
    <BOUNDS type="Window" left="2933" top="2163" width="8995" height="5999">
    </BOUNDS>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="12">
@@ -483,7 +488,7 @@
    <LINK srcnodeid="23" srcpinname="Count" dstnodeid="24" dstpinname="Y Input Value">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="25">
-   <BOUNDS type="Box" left="749" top="6510" width="693" height="210">
+   <BOUNDS type="Box" left="749" top="6510" width="810" height="240">
    </BOUNDS>
    <BOUNDS type="Node" left="749" top="6510" width="0" height="0">
    </BOUNDS>
