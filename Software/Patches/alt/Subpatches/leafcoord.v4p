@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.7.dtd" >
-   <PATCH nodename="C:\Users\Tang Cam Hong Pham\Documents\P6 - Git\Software\Patches\subpatches\leafcoord.v4p" scrollx="0" scrolly="5725" systemname="leafcoord" filename="C:\Users\Tang Cam Hong Pham\Desktop\FREIRAUM\V4 Prototyp\leafcoord.v4p">
-   <BOUNDS type="Window" left="77" top="5831" width="8995" height="5999">
+   <PATCH nodename="C:\Users\Tang Cam Hong Pham\Documents\P6 - Git\Software\Patches\subpatches\leafcoord.v4p" scrollx="0" scrolly="1789" systemname="leafcoord" filename="C:\Users\Tang Cam Hong Pham\Desktop\FREIRAUM\V4 Prototyp\leafcoord.v4p">
+   <BOUNDS type="Window" left="1820" top="3591" width="8995" height="5999">
    </BOUNDS>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="12">
    <BOUNDS type="Node" left="385" top="2597" width="100" height="100">
@@ -83,13 +83,13 @@
    </PIN>
    <PIN pinname="Maximum" slicecount="1" values="1.5">
    </PIN>
-   <PIN pinname="Y Input Value" slicecount="9" visible="1" values="0.213869731800767,0.54528735632184,0.751299734748013,0.767509578544064,0.578544061302678,0.346053639846747,0.518467432950199,0.93800766283525,1.00417329796641">
+   <PIN pinname="Y Input Value" slicecount="9" visible="1" values="0.213869731800767,0.54528735632184,0.751299734748013,0.767509578544064,0.578544061302678,0.346053639846747,0.518467432950199,0.93800766283525,0.981184792219283">
    </PIN>
    <PIN pinname="Slider Behavior" slicecount="1" values="Slider">
    </PIN>
    <PIN pinname="Slider Constraints" slicecount="1" values="None">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="9" visible="1" pintype="Input" values="-0.413043478260869,-0.383399209486168,-0.47126544952632,-0.634387351778655,-0.553359683794467,-0.768774703557311,-0.839920948616601,-0.679841897233202,-0.834901813162681">
+   <PIN pinname="X Input Value" slicecount="9" visible="1" pintype="Input" values="-0.413043478260869,-0.383399209486168,-0.47126544952632,-0.634387351778655,-0.553359683794467,-0.768774703557311,-0.839920948616601,-0.679841897233202,-0.8230441056528">
    </PIN>
    <PIN pinname="X Output Value" visible="1" pintype="Output">
    </PIN>
@@ -383,23 +383,5 @@
    <LINK srcnodeid="41" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Input 3">
    </LINK>
    <LINK srcnodeid="40" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Input 2">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="42">
-   <BOUNDS type="Box" left="2828" top="9835" width="693" height="420">
-   </BOUNDS>
-   <BOUNDS type="Node" left="2828" top="9835" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Vector Size" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Descriptive Name" slicecount="1" values="|Das Selbst|">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="40" srcpinname="Y Output Value" dstnodeid="42" dstpinname="Y Input Value">
    </LINK>
    </PATCH>

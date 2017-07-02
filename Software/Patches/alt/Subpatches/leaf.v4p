@@ -1,11 +1,11 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.7.dtd" >
    <PATCH nodename="C:\Users\Tang Cam Hong Pham\Documents\P6 - Git\Software\Patches\subpatches\leaf.v4p" systemname="leaf" filename="C:\Users\Tang Cam Hong Pham\Desktop\FREIRAUM\V4 Prototyp\leaf.v4p" scrollx="1047" scrolly="0">
-   <BOUNDS type="Window" left="6265" top="2114" width="8995" height="10234">
+   <BOUNDS type="Window" left="3003" top="2114" width="8995" height="10234">
    </BOUNDS>
    <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE systemname="HSV (Color Join)" nodename="HSV (Color Join)" componentmode="Hidden" id="5">
-   <BOUNDS type="Node" left="4872" top="4305" width="100" height="100">
+   <BOUNDS type="Node" left="6300" top="2772" width="100" height="100">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -13,9 +13,9 @@
    </PIN>
    <PIN pinname="Saturation" slicecount="1" values="0.92">
    </PIN>
-   <PIN pinname="Value" slicecount="1" visible="1" values="0.8">
+   <PIN pinname="Value" slicecount="3" visible="1" values="0.5,0.65,0.75">
    </PIN>
-   <PIN pinname="Alpha" slicecount="1" visible="1" values="0.8">
+   <PIN pinname="Alpha" slicecount="27" visible="1" values="1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1">
    </PIN>
    </NODE>
    <NODE systemname="Transform (Transform 2d Vector)" nodename="Transform (Transform 2d Vector)" componentmode="Hidden" id="19">
@@ -117,11 +117,11 @@
    </PIN>
    </NODE>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="29">
-   <BOUNDS type="Box" left="4921" top="2548" width="770" height="861">
+   <BOUNDS type="Box" left="5215" top="462" width="770" height="861">
    </BOUNDS>
-   <BOUNDS type="Node" left="4921" top="2548" width="0" height="0">
+   <BOUNDS type="Node" left="5215" top="462" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.5,0.51,0.59">
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.33,0.23,0.19">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -134,6 +134,28 @@
    <PIN pinname="Vector Size" slicecount="1" values="3">
    </PIN>
    </NODE>
+   <NODE id="4" nodename="IOBox (Color)" componentmode="InABox" systemname="IOBox (Color)">
+   <BOUNDS type="Box" left="6286" top="3269" width="1323" height="1372">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6286" top="3269" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Color Input" slicecount="1" visible="1" values="|0.47462,0.47462,0.47462,1.00000|">
+   </PIN>
+   <PIN pinname="Color Output" visible="1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Chooser Style" slicecount="1" values="HSVAField">
+   </PIN>
+   <PIN pinname="Show Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="4" dstpinname="Color Input">
+   </LINK>
    <NODE id="113" systemname="Segment (EX9.Geometry 2d)" filename="%VVVV%\addonpack\lib\nodes\plugins\2dMeshNodes.dll" nodename="Segment (EX9.Geometry 2d)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Node" left="2135" top="5110" width="100" height="100">
    </BOUNDS>
@@ -231,9 +253,9 @@
    <LINK srcnodeid="24" srcpinname="Y Output Value" dstnodeid="19" dstpinname="ScaleXY">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="132">
-   <BOUNDS type="Box" left="5243" top="3647" width="693" height="210">
+   <BOUNDS type="Box" left="6636" top="2093" width="693" height="210">
    </BOUNDS>
-   <BOUNDS type="Node" left="5243" top="3647" width="0" height="0">
+   <BOUNDS type="Node" left="6636" top="2093" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Y Input Value" slicecount="27" visible="1" values="0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8">
    </PIN>
@@ -243,9 +265,9 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Value">
    </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
    </NODE>
+   <LINK srcnodeid="132" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Value">
+   </LINK>
    <LINK srcnodeid="29" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Hue">
    </LINK>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="136">
@@ -311,9 +333,5 @@
    <LINK srcnodeid="140" srcpinname="Y Output Value" dstnodeid="139" dstpinname="ScaleX">
    </LINK>
    <LINK srcnodeid="140" srcpinname="Y Output Value" dstnodeid="139" dstpinname="ScaleY">
-   </LINK>
-   <LINK srcnodeid="5" srcpinname="Output" dstnodeid="114" dstpinname="Ambient Color">
-   </LINK>
-   <LINK srcnodeid="132" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Value">
    </LINK>
    </PATCH>

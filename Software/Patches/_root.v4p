@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.7.dtd" >
-   <PATCH nodename="C:\Users\Tang Cam Hong Pham\Desktop\backup\_root.v4p" scrollx="-360" scrolly="0" systemname="testuu" filename="C:\Users\Tang Cam Hong Pham\Desktop\VVVV\vvvv_50beta35.5_x86\testuu.v4p">
-   <BOUNDS type="Window" left="1176" top="1085" width="10234" height="12117">
+   <PATCH nodename="C:\Users\Tang Cam Hong Pham\Documents\P6 - Git\Software\Patches\_root.v4p" scrollx="-360" scrolly="0" systemname="testuu" filename="C:\Users\Tang Cam Hong Pham\Desktop\VVVV\vvvv_50beta35.5_x86\testuu.v4p">
+   <BOUNDS type="Window" left="9051" top="280" width="10234" height="12117">
    </BOUNDS>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="20">
    <BOUNDS type="Node" left="1040" top="8406" width="6356" height="252">
@@ -137,7 +137,7 @@
    </BOUNDS>
    <PIN pinname="Input" visible="1" slicecount="54" values="0.612648221343874,0.493524137931034,0.559288537549408,0.0376245210727967,0.323200953635736,0.258962569997053,0.201581027667985,0.112337164750959,0.0217391304347832,0.430344827586208,0.411067193675889,0.579770114942528,0.353754940711463,0.763678160919542,0.031620553359684,0.574022988505748,0.064307673003326,0.822180960801651,0.713438735177866,0.903524904214561,1.01581027667984,1.08551724137931,1.03466340422862,1.31451812555261,0.646245059288538,1.21578544061303,0.810276679841897,1.44061302681992,0.333992094861661,1.00122605363985,0.239130434782608,1.09318007662836,0.250988142292491,1.29432950191571,0.603833364702931,1.49076333628058,1.69762845849803,0.893946360153263,1.44071146245059,0.999310344827586,1.45,1.27,1.67984189723321,1.32114942528736,1.88537549407114,0.961685823754784,1.90513833992095,1.30582375478927,2.16996047430831,0.911187739463607,2.18577075098815,1.05678160919541,2.08209423426814,1.23405835543767">
    </PIN>
-   <PIN pinname="Index" visible="1" slicecount="1" values="54">
+   <PIN pinname="Index" visible="1" slicecount="1" values="2">
    </PIN>
    <PIN pinname="Bin Size" slicecount="1" values="2">
    </PIN>
@@ -170,8 +170,8 @@
    </LINK>
    <LINK srcnodeid="398" srcpinname="Left Button" dstnodeid="339" dstpinname="Y Input Value">
    </LINK>
-   <NODE id="15" stayontop="1" componentmode="InAWindow" systemname="Renderer (EX9)" nodename="Renderer (EX9)">
-   <BOUNDS type="Window" left="11193" top="0" width="9065" height="7623">
+   <NODE id="15" stayontop="0" componentmode="Hidden" systemname="Renderer (EX9)" nodename="Renderer (EX9)">
+   <BOUNDS type="Window" left="-70" top="0" width="9065" height="7623">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
@@ -239,7 +239,7 @@
    <NODE systemname="leafhit" filename="subpatches\leafhit.v4p" nodename="subpatches\leafhit.v4p" componentmode="Hidden" id="502">
    <BOUNDS type="Node" left="3885" top="4067" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="4858" top="4228" width="8995" height="5999">
+   <BOUNDS type="Window" left="10052" top="2793" width="8995" height="5999">
    </BOUNDS>
    <PIN pinname="TranslateXY" visible="1" slicecount="108" values="-0.41897233201581,0.268774703557313,-0.586935632183908,0.4016091954023,-0.626482213438734,0.339920948616602,-0.583065134099617,0.489731800766284,-0.352688374427505,0.730315578141666,-0.396209843796051,0.0252460949012678,-0.747035573122529,0.644268774703558,-0.427892720306512,0.309655172413795,-0.440711462450592,0.312252964426878,-0.144367816091953,0.884367816091955,-1.08300395256917,0.584980237154151,-0.316781609195404,0.616168582375479,-0.832015810276679,0.57707509881423,0.0165517241379336,0.857547892720308,-1.11857707509881,0.881422924901186,0.0682758620689663,0.340306513409962,-1.00090971830102,0.959564589999374,0.222564102564103,0.714901267315061,-0.0573122529644263,-0.241106719367589,0.386283524904216,0.516551724137932,-0.217391304347828,-0.403162055335968,0.740689655172414,0.65065134099617,-0.483123157036202,-0.621463077984816,0.601874447391691,0.228311229000884,-0.290513833992094,-0.889328063241107,0.85946360153257,0.75793103448276,-0.434782608695653,-0.640316205533596,0.877394636015322,-0.150114942528733,-0.816205533596837,-0.517786561264821,0.403524904214563,-0.52176245210728,-0.804347826086957,-1.23320158102766,0.552950191570889,-0.134789272030649,-0.679841897233202,-0.996047430830038,0.93800766283525,-0.37616858237548,-0.763755568103393,0.268774703557313,1.00417329796641,0.4016091954023,0.521739130434789,0.339920948616602,0.0127203065134164,0.489731800766284,0.630434782608692,0.730315578141666,0.146819923371647,0.0252460949012678,0.224703557312253,0.644268774703558,0.264252873563218,0.309655172413795,0.741106719367598,0.312252964426878,0.257931034482762,0.884367816091955,0.413043478260863,0.584980237154151,0.588122605363979,0.616168582375479,0.304347826086958,0.57707509881423,0.683218390804595,0.857547892720308,0.984189723320168,0.881422924901186,0.585517241379316,0.340306513409962,0.486166007905146,0.959564589999374,0.759846743295027,0.714901267315061,0.767864985256282,-0.241106719367589,0.812602416740352,0.516551724137932">
    </PIN>
@@ -259,7 +259,7 @@
    </PIN>
    </NODE>
    <NODE id="303" componentmode="Hidden" systemname="leaf" filename="subpatches\leaf.v4p" nodename="subpatches\leaf.v4p" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Window" left="3003" top="2114" width="8995" height="10234">
+   <BOUNDS type="Window" left="6265" top="2114" width="8995" height="10234">
    </BOUNDS>
    <PIN pinname="Layer" visible="1" slicecount="1" values="||">
    </PIN>
@@ -309,7 +309,7 @@
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="1820" top="3591" width="8995" height="5999">
+   <BOUNDS type="Window" left="77" top="5831" width="8995" height="5999">
    </BOUNDS>
    <PIN pinname="Count" visible="1">
    </PIN>
@@ -322,7 +322,7 @@
    <LINKPOINT x="3157" y="5194">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="tree" filename="subpatches\tree.v4p" nodename="subpatches\tree.v4p" componentmode="InAWindow" id="327">
+   <NODE systemname="tree" filename="subpatches\tree.v4p" nodename="subpatches\tree.v4p" componentmode="Hidden" id="327">
    <BOUNDS type="Node" left="2044" top="6881" width="847" height="252">
    </BOUNDS>
    <BOUNDS type="Window" left="3675" top="3332" width="10234" height="11711">
@@ -351,7 +351,7 @@
    </LINKPOINT>
    </LINK>
    <NODE id="326" systemname="flowerfruit" filename="subpatches\flowerfruit.v4p" nodename="subpatches\flowerfruit.v4p" componentmode="Hidden" hiddenwhenlocked="0" managers="">
-   <BOUNDS type="Window" left="4886" top="5054" width="10248" height="10983">
+   <BOUNDS type="Window" left="3717" top="4725" width="10248" height="10983">
    </BOUNDS>
    <PIN pinname="X - Y" slicecount="1" pintype="Input" visible="1" values="0.21">
    </PIN>
@@ -423,8 +423,6 @@
    <LINK srcnodeid="438" srcpinname="Output" dstnodeid="508" dstpinname="TranslateXY">
    </LINK>
    <LINK srcnodeid="508" srcpinname="Output" dstnodeid="326" dstpinname="Value">
-   </LINK>
-   <LINK srcnodeid="437" srcpinname="Count" dstnodeid="439" dstpinname="Index">
    </LINK>
    <LINK srcnodeid="508" srcpinname="Object Hit" dstnodeid="336" dstpinname="Y Input Value">
    </LINK>
@@ -576,8 +574,6 @@
    <PIN pinname="Layer" visible="1">
    </PIN>
    </NODE>
-   <LINK srcnodeid="533" srcpinname="Layer" dstnodeid="20" dstpinname="Layer 5">
-   </LINK>
    <NODE id="496" systemname="flowerscaled" filename="subpatches\flowerscaled.v4p" nodename="subpatches\flowerscaled.v4p" componentmode="Hidden">
    <PIN pinname="Stoploop" slicecount="1" visible="1" values="0">
    </PIN>
@@ -587,7 +583,7 @@
    </BOUNDS>
    <PIN pinname="Scaled Flower" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="1897" top="2709" width="8995" height="5999">
+   <BOUNDS type="Window" left="8218" top="4788" width="8995" height="5999">
    </BOUNDS>
    <PIN pinname="Input" visible="1">
    </PIN>
@@ -601,7 +597,7 @@
    </PIN>
    <BOUNDS type="Node" left="3199" top="5180" width="100" height="100">
    </BOUNDS>
-   <BOUNDS type="Window" left="5845" top="5621" width="8995" height="5999">
+   <BOUNDS type="Window" left="6713" top="4333" width="8995" height="5999">
    </BOUNDS>
    <PIN pinname="Output" visible="1">
    </PIN>
@@ -627,11 +623,11 @@
    <LINK srcnodeid="496" srcpinname="Output" dstnodeid="326" dstpinname="ScaleXY">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="536">
-   <BOUNDS type="Box" left="630" top="1722" width="480" height="480">
+   <BOUNDS type="Box" left="931" top="4291" width="480" height="480">
    </BOUNDS>
-   <BOUNDS type="Node" left="630" top="1722" width="0" height="0">
+   <BOUNDS type="Node" left="931" top="4291" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -643,9 +639,53 @@
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="Play">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    </NODE>
    <LINK srcnodeid="536" srcpinname="Y Output Value" dstnodeid="327" dstpinname="Play">
+   </LINK>
+   <NODE systemname="Toggle (Animation)" nodename="Toggle (Animation)" componentmode="Hidden" id="542">
+   <BOUNDS type="Node" left="672" top="3297" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="543">
+   <BOUNDS type="Node" left="812" top="2667" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="543" srcpinname="Up Edge" dstnodeid="542" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="542" srcpinname="Output" dstnodeid="536" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Keyboard (Devices Desktop)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Keyboard (Devices Desktop)" componentmode="Hidden" id="544">
+   <BOUNDS type="Node" left="672" top="1729" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="672" top="1729" width="1400" height="1400">
+   </BOUNDS>
+   <PIN pinname="Device" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="KeyMatch (Keyboard)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="KeyMatch (Keyboard)" componentmode="Hidden" id="545">
+   <BOUNDS type="Node" left="791" top="2170" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="791" top="2170" width="1400" height="1400">
+   </BOUNDS>
+   <PIN pinname="Keyboard" visible="1">
+   </PIN>
+   <PIN pinname="Key Match" slicecount="1" values="p">
+   </PIN>
+   <PIN pinname="P" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="544" srcpinname="Device" dstnodeid="545" dstpinname="Keyboard">
+   </LINK>
+   <LINK srcnodeid="545" srcpinname="P" dstnodeid="543" dstpinname="Input">
    </LINK>
    </PATCH>

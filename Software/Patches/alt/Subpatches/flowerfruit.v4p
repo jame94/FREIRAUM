@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.7.dtd" >
-   <PATCH nodename="C:\Users\Tang Cam Hong Pham\Documents\P6 - Git\Software\Patches\subpatches\flowerfruit.v4p" scrollx="0" scrolly="-3" systemname="flowerfruit" filename="C:\Users\Tang Cam Hong Pham\Desktop\FREIRAUM\V4 Prototyp\flowerfruit.v4p">
-   <BOUNDS type="Window" left="3717" top="4725" width="10248" height="10983">
+   <PATCH nodename="C:\Users\Tang Cam Hong Pham\Desktop\backup\subpatches\flowerfruit.v4p" scrollx="0" scrolly="-360" systemname="flowerfruit" filename="C:\Users\Tang Cam Hong Pham\Desktop\FREIRAUM\V4 Prototyp\flowerfruit.v4p">
+   <BOUNDS type="Window" left="4886" top="5054" width="10248" height="10983">
    </BOUNDS>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="7">
    <BOUNDS type="Node" left="4158" top="273" width="100" height="100">
@@ -373,7 +373,7 @@
    </PIN>
    <PIN pinname="Source Maximum" slicecount="1" values="1">
    </PIN>
-   <PIN pinname="Destination Maximum" slicecount="1" values="0.2" visible="1">
+   <PIN pinname="Destination Maximum" slicecount="1" values="0.2">
    </PIN>
    </NODE>
    <LINK srcnodeid="51" srcpinname="Y Output Value" dstnodeid="90" dstpinname="Input">
@@ -384,26 +384,4 @@
    <LINKPOINT x="518" y="2510">
    </LINKPOINT>
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="91">
-   <BOUNDS type="Box" left="3157" top="805" width="693" height="210">
-   </BOUNDS>
-   <BOUNDS type="Node" left="3157" top="805" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0.25">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="91" srcpinname="Y Output Value" dstnodeid="90" dstpinname="Destination Maximum">
-   </LINK>
-   <NODE systemname="GetSlice (Spreads)" nodename="GetSlice (Spreads)" componentmode="Hidden" id="92">
-   <BOUNDS type="Node" left="6307" top="4354" width="100" height="100">
-   </BOUNDS>
-   </NODE>
-   <NODE systemname="FileTexture (EX9.Texture)" nodename="FileTexture (EX9.Texture)" componentmode="Hidden" id="93">
-   <BOUNDS type="Node" left="5103" top="4410" width="100" height="100">
-   </BOUNDS>
-   </NODE>
    </PATCH>
