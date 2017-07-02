@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.5.dtd" >
-   <PATCH nodename="C:\Users\janme\Documents\FREIRAUM\Software\Patches\_root.v4p" scrollx="645" scrolly="1425" systemname="testuu" filename="C:\Users\Tang Cam Hong Pham\Desktop\VVVV\vvvv_50beta35.5_x86\testuu.v4p">
-   <BOUNDS type="Window" left="315" top="180" width="13275" height="11700">
+   <PATCH nodename="C:\Users\janme\Documents\FREIRAUM\Software\Patches\_root.v4p" scrollx="0" scrolly="2220" systemname="testuu" filename="C:\Users\Tang Cam Hong Pham\Desktop\VVVV\vvvv_50beta35.5_x86\testuu.v4p">
+   <BOUNDS type="Window" left="2505" top="150" width="13275" height="11700">
    </BOUNDS>
    <NODE systemname="Group (EX9)" nodename="Group (EX9)" componentmode="Hidden" id="20">
    <BOUNDS type="Node" left="1040" top="8406" width="6356" height="252">
@@ -324,7 +324,7 @@
    </LINK>
    <LINK srcnodeid="398" srcpinname="Left Button" dstnodeid="339" dstpinname="Y Input Value">
    </LINK>
-   <NODE id="15" stayontop="1" componentmode="FullScreen" systemname="Renderer (EX9)" nodename="Renderer (EX9)">
+   <NODE id="15" stayontop="1" componentmode="Hidden" systemname="Renderer (EX9)" nodename="Renderer (EX9)">
    <BOUNDS type="Window" left="23190" top="645" width="9060" height="7620">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
@@ -550,36 +550,6 @@
    <LINKPOINT x="3157" y="5194">
    </LINKPOINT>
    </LINK>
-   <NODE systemname="tree" filename="subpatches\tree.v4p" nodename="subpatches\tree.v4p" componentmode="Hidden" id="327">
-   <BOUNDS type="Node" left="2044" top="6881" width="847" height="252">
-   </BOUNDS>
-   <BOUNDS type="Window" left="6960" top="300" width="10230" height="11700">
-   </BOUNDS>
-   <PIN pinname="Layer" visible="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   <PIN pinname="Stop Loop" visible="1">
-   </PIN>
-   <PIN pinname="Reverse Loop" visible="1">
-   </PIN>
-   <PIN pinname="R" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="327" srcpinname="Layer" dstnodeid="20" dstpinname="Layer 2" linkstyle="VHV">
-   <LINKPOINT x="1869" y="7604">
-   </LINKPOINT>
-   <LINKPOINT x="2219" y="7817">
-   </LINKPOINT>
-   </LINK>
-   <LINK srcnodeid="327" srcpinname="R" dstnodeid="498" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="327" srcpinname="Stop Loop" dstnodeid="499" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="327" srcpinname="Reverse Loop" dstnodeid="490" dstpinname="Y Input Value">
-   </LINK>
-   <LINK srcnodeid="327" srcpinname="Stop Loop" dstnodeid="490" dstpinname="Reset">
-   </LINK>
    <NODE id="326" systemname="flowerfruit" filename="subpatches\flowerfruit.v4p" nodename="subpatches\flowerfruit.v4p" componentmode="Hidden" hiddenwhenlocked="0" managers="">
    <BOUNDS type="Window" left="3045" top="4500" width="10245" height="10980">
    </BOUNDS>
@@ -662,7 +632,7 @@
    </LINK>
    <LINK srcnodeid="437" srcpinname="Output" dstnodeid="502" dstpinname="TranslateXY">
    </LINK>
-   <NODE systemname="flowerhit" filename="subpatches\flowerhit.v4p" nodename="subpatches\flowerhit.v4p" componentmode="InAWindow" id="508">
+   <NODE systemname="flowerhit" filename="subpatches\flowerhit.v4p" nodename="subpatches\flowerhit.v4p" componentmode="Hidden" id="508">
    <BOUNDS type="Node" left="5089" top="4067" width="100" height="100">
    </BOUNDS>
    <PIN pinname="TranslateXY" visible="1">
@@ -799,5 +769,41 @@
    <LINK srcnodeid="517" srcpinname="Y Output Value" dstnodeid="502" dstpinname="PointsXY">
    </LINK>
    <LINK srcnodeid="516" srcpinname="Y Output Value" dstnodeid="517" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="tree.v4p" filename="Subpatches\tree.v4p.xml" nodename="Subpatches\tree.v4p.xml" componentmode="Hidden" id="518">
+   <BOUNDS type="Node" left="1950" top="6615" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="8580" top="0" width="10230" height="11700">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="tree" filename="Subpatches\tree.v4p" nodename="Subpatches\tree.v4p" componentmode="Hidden" id="327">
+   <BOUNDS type="Node" left="2044" top="6881" width="847" height="252">
+   </BOUNDS>
+   <BOUNDS type="Window" left="6960" top="300" width="10230" height="11700">
+   </BOUNDS>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Stop Loop" visible="1">
+   </PIN>
+   <PIN pinname="Reverse Loop" visible="1">
+   </PIN>
+   <PIN pinname="R" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="327" srcpinname="Layer" dstnodeid="20" dstpinname="Layer 2" linkstyle="VHV">
+   <LINKPOINT x="1869" y="7604">
+   </LINKPOINT>
+   <LINKPOINT x="2219" y="7817">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="327" srcpinname="R" dstnodeid="498" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="327" srcpinname="Stop Loop" dstnodeid="499" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="327" srcpinname="Reverse Loop" dstnodeid="490" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="327" srcpinname="Stop Loop" dstnodeid="490" dstpinname="Reset">
    </LINK>
    </PATCH>
