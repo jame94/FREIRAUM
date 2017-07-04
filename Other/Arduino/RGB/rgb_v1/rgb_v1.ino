@@ -1,6 +1,6 @@
 #include <Adafruit_NeoPixel.h>
  
-#define PIN 12
+#define PIN 6
 
 // Parameter 1 = number of pixels in strip
 // Parameter 2 = Arduino pin number (most are valid)
@@ -31,18 +31,24 @@ void setup() {
 
 void loop() {
   // Some example procedures showing how to display to the pixels:
-  colorWipe(strip.Color(255, 0, 0), 50); // Red
-  colorWipe(strip.Color(0, 255, 0), 50); // Green
-  colorWipe(strip.Color(0, 0, 255), 50); // Blue
-//colorWipe(strip.Color(0, 0, 0, 255), 50); // White RGBW
-  // Send a theater pixel chase in...
-  theaterChase(strip.Color(127, 127, 127), 50); // White
-  theaterChase(strip.Color(127, 0, 0), 50); // Red
-  theaterChase(strip.Color(0, 0, 127), 50); // Blue
+  colorWipe(strip.Color(255, 65, 0), 50); // Orange
 
-  rainbow(20);
-  rainbowCycle(20);
-  theaterChaseRainbow(50);
+  
+  colorWipe(strip.Color(0, 255, 60), 50); // GreenBlue
+// colorWipe(strip.Color(0, 0, 255), 50); // Blue
+
+ colorWipe(strip.Color(120, 21, 133), 50); // Violett
+//colorWipe(strip.Color(0, 0, 0, 0), 50); // White RGBW
+  // Send a theater pixel chase in...
+  //theaterChase(strip.Color(127, 127, 127), 50); // White
+ // theaterChase(strip.Color(127, 0, 0), 50); // Red
+  // theaterChase(strip.Color(0, 0, 127), 50); // Blue
+
+ // rainbow(20);
+ // rainbowCycle(20);
+ // theaterChaseRainbow(50);
+
+
 }
 
 // Fill the dots one after the other with a color
@@ -129,3 +135,5 @@ uint32_t Wheel(byte WheelPos) {
   WheelPos -= 170;
   return strip.Color(WheelPos * 3, 255 - WheelPos * 3, 0);
 }
+
+
