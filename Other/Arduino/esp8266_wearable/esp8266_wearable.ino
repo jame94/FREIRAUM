@@ -1,3 +1,4 @@
+
 #include <ESP8266WiFi.h>
 #include <b64.h>
 #include <PubSubClient.h>
@@ -27,9 +28,9 @@ boolean secondBeat = true;
 boolean QS = false;   
 
 // Update these with values suitable for your network.
-const char* ssid = "Jan Messing";
-const char* password = "castle-multi-pecos-vaduz";
-const char* mqtt_server = "172.20.10.9"; // http://www.hivemq.com/demos/websocket-client/ 212.72.72.12
+const char* ssid = "Sergejs iPad";
+const char* password = "testtest01";
+const char* mqtt_server = "172.20.10.4"; // http://www.hivemq.com/demos/websocket-client/ 212.72.72.12
 
 
 WiFiClient espClient;
@@ -129,6 +130,7 @@ void loop() {
     Serial.print("Publish message: ");
     Serial.println(msg);
     client.publish("p6/mqtt", msg);
+    delay(500);
   }
 
   Signal = analogRead(pulsePin);  // Read the PulseSensor's value. 
